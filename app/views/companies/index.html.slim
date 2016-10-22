@@ -1,2 +1,17 @@
 h1 Companies#index
 p Find me in app/views/companies/index.html.slim
+
+.row
+	- @companies.each do |company|
+		.col-sm-6.col-md-4
+			.thumbnail
+				.caption
+					h3 = company.name
+					p = company.company_type
+					p = company.description
+					p = company.state
+					p = company.city
+					p = company.website
+				= link_to 'Show', company
+
+

@@ -11,7 +11,7 @@ class CompaniesController < ApplicationController
     @company = Company.new
   end
 
-  def edit
+  def create
     @company = Company.new(company_params)
     if @company.save
       redirect_to root_path

@@ -34,10 +34,8 @@ $light-grey: #d4d4d4;
 	padding: 15px;
 	text-align: left;
 
-	p {
-		.fa{
-			margin-right: 10px;
-		}
+	p .fa{
+		margin-right: 10px;
 	}
 }
 
@@ -47,18 +45,16 @@ $light-grey: #d4d4d4;
 	border-radius: 5px;
 	padding: 20px;
 	
-
 	.btn {
 		font-size: 14px;
 		margin-top: 10px;
 		margin-left: 5px;
 		width: 100%;
-		
 	}
 }
 
 @media screen and (max-width: 1000px) {
-   .container-60 {
+  .container-60 {
 		width: 90%;
 	} 
 }

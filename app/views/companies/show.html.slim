@@ -3,9 +3,10 @@ section#company-detail-box
 	.company-empty-box
 	.company-detail-box
 		.company-logo
-		h2 = @company.name
-		p = @company.description
 		.container.container-60
+			h2 = @company.name
+			p = @company.description
+		.container.container-60.company-detail-container
 			.row
 				.col-md-6
 					.company-detail
@@ -16,7 +17,8 @@ section#company-detail-box
 						p 	
 							i.fa.fa-users aria-hidden="true" 
 							| &nbsp
-							| 50 - 100 employees
+							= @company.company_size
+							|  employees
 						p 	
 							i.fa.fa-map-marker aria-hidden="true" 
 							| &nbsp &nbsp
@@ -33,7 +35,10 @@ section#company-detail-box
 							| Get Hired now ? Or contact 
 							strong = @company.name
 						  	|  for more detail
-						.btn.btn-lg.btn-success Get Hire
-						.btn.btn-lg.btn-info Contact Now
+						.row
+						 	.col-sm-6
+								.btn.btn-lg.btn-success Get Hire
+							.col-sm-6
+								.btn.btn-lg.btn-info Contact Now
 
 

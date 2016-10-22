@@ -1,3 +1,66 @@
 // Place all the styles related to the companies controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$light-grey: #d4d4d4;
+
+.company-empty-box {
+	width: 100%;
+	height: 250px;
+	border-bottom: 2px solid $light-grey;
+}
+
+.company-logo {
+	width: 150px;
+	height: 150px;
+	border: 2px solid $light-grey;
+	margin: 0 auto;
+	background: white;
+	border-radius: 5px;
+}
+
+.container-60 {
+	width: 60%;
+}
+.company-detail-box {
+	margin-top: -75px;
+	text-align: center;	
+}
+
+.company-detail-container {
+	margin-top: 20px;
+}
+
+.company-detail {
+	padding: 15px;
+	text-align: left;
+
+	p {
+		.fa{
+			margin-right: 10px;
+		}
+	}
+}
+
+.contact-company {
+	width: 100%;
+	background-color: $light-grey;
+	border-radius: 5px;
+	padding: 20px;
+	
+
+	.btn {
+		font-size: 14px;
+		margin-top: 10px;
+		margin-left: 5px;
+		width: 100%;
+		
+	}
+}
+
+@media screen and (max-width: 1000px) {
+   .container-60 {
+		width: 90%;
+	} 
+}
+
+

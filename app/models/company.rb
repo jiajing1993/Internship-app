@@ -1,3 +1,3 @@
 class Company < ApplicationRecord
-  mount_uploader :logo, :LogoUploader
+  mount_uploader :logo, LogoUploader
 end

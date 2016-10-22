@@ -1,7 +1,39 @@
-h1 = @company.id
-h1 = @company.name
-h1 = @company.company_type
-h1 = @company.description
-h1 = @company.state
-h1 = @company.city
+
+section#company-detail-box
+	.company-empty-box
+	.company-detail-box
+		.company-logo
+		h2 = @company.name
+		p = @company.description
+		.container.container-60
+			.row
+				.col-md-6
+					.company-detail
+						p 
+							i.fa.fa-tag aria-hidden="true" 
+							| &nbsp 
+							= @company.company_type
+						p 	
+							i.fa.fa-users aria-hidden="true" 
+							| &nbsp
+							| 50 - 100 employees
+						p 	
+							i.fa.fa-map-marker aria-hidden="true" 
+							| &nbsp &nbsp
+							= @company.city 
+							| , 
+							= @company.state
+						p 	
+							i.fa.fa-globe aria-hidden="true" 
+							| &nbsp 
+							= @company.website
+				.col-md-6
+					.contact-company
+						p 
+							| Get Hired now ? Or contact 
+							strong = @company.name
+						  	|  for more detail
+						.btn.btn-lg.btn-success Get Hire
+						.btn.btn-lg.btn-info Contact Now
+
 

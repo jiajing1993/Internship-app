@@ -18,6 +18,9 @@ h1 Companies#new
       = f.label :state
       = f.text_field :state, :class => "form-control"
     .form-group
+      = f.label :logo
+      = f.file_field :logo, :class => "form-control"
+    .form-group
       = f.label :website
       = f.text_field :website, :class => "form-control"
     .form-group
